@@ -1,0 +1,25 @@
+# Hiya Jain
+# Lab 00: Python Calculator: Mastering the Basics of Computation
+# CISC 1800 - Introduction to Computer Programming
+
+def calculator():
+    operator1 = input("what is the operator: ")
+    num_1 = float(input("what is the first number?: "))
+    num_2 = float(input("what is the second number: "))
+    
+
+    if operator1 == '+':
+        print(num_1 + num_2)
+
+    elif operator1 == '-':
+        print(num_1 - num_2)
+
+    elif operator1 == '*':
+        print(num_1 * num_2)
+
+    elif operator1 == '/':
+        print(num_1 / num_2)
+
+    else: print('valid operator not found')
+
+calculator()
