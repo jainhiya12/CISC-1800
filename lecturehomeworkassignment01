@@ -1,0 +1,28 @@
+#Q1 using nested loops 
+for i in range(1, 6):
+    for j in range(i):
+        print("*", end="")
+    print("")
+    
+
+#Q2 determing input as even or odd
+def numbers():
+    print("this program determins if the input is odd or even")
+    a = int(input("what is the positive whole number input: "))
+
+    if a == 0:
+        print("undefined")
+    elif a % 2 == 0:
+        print("even")
+    else:
+        print("odd")
+numbers()      
+
+
+#Q3 Converting kilometers to miles
+def distance():
+    print("this program converts kilometers to miles")
+    a = float(input("what is the distance in kms: "))
+    miles = a * 0.62
+    print(miles)
+distance ()
