@@ -1,4 +1,5 @@
 #Q2 determing input as even or odd
+
 def numbers():
     print("this program determins if the input is odd or even")
     a = int(input("what is the positive whole number input: "))
