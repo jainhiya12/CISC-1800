@@ -1,0 +1,20 @@
+# Hiya Jain
+# Lab 02: Caesar Cipher
+# CISC 1800 - Introduction to Computer Programming
+
+def encrypt_text(plaintext, shift):
+    ans = ""
+    for i in range(len(plaintext)):
+      ch = plaintext[i]
+      if ch == " ":
+        ans += " "
+      elif (ch.islower()):
+        ans += chr((ord(ch) + shift-97) % 26 + 97)
+      elif ch.isupper():
+        ans += chr((ord(ch) + shift-65) % 26 + 65)
+    return ans
+
+#test case
+plaintext = "Hello World"
+shift = 3
+print (encrypt_text(plaintext, shift))
