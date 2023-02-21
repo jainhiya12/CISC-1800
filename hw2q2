@@ -1,0 +1,15 @@
+# taking an input from the user and storing it as in a string + converting all letters to lower case
+string = input("Enter a string: ").lower()
+# Creating a string containing all lower case letters
+vowels = "aeiou"
+# an empty sting that will be used to generate the ouput
+result = ""
+
+# for loop iterates over each character in the string and if the character is a vowel then it is replaced by a *
+for char in string:
+    if char in vowels:
+        result += "*"
+    else:
+        result += char
+# output is printed
+print(result)
