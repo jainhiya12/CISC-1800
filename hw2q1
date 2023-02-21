@@ -1,4 +1,7 @@
+# taking an input from the user and unifying the case
 word = input("Enter a word: ").lower()
+# using a python slice that reverses the order of the charcaters
+# if the word is equal to the reverse then true, else false
 if word == word[::-1]:
     print("Yes, this word is a palindrome.")
 else:
