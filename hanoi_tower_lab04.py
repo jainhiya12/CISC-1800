@@ -1,3 +1,7 @@
+# Hiya Jain
+# Lab 04: Tower of Hanoi
+# CISC 1800 - Introduction to Computer Programming
+
 def tower_of_hanoi(n, source, auxiliary, target):
   if n == 1:
     print("move disc top from", source, "to", target)
