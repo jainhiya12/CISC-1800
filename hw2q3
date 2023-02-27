@@ -1,0 +1,15 @@
+# taking input from the user
+string = input("Enter a string: ")
+# acccounting for both upper and lower case letters
+vowels = "aeiouAEIOU"
+# storing the value in a new string
+new_string = ""
+
+# replacing vowels
+for char in string:
+    if char in vowels:
+        new_string += "*"
+    else:
+        new_string += char
+# printing output
+print(new_string)
