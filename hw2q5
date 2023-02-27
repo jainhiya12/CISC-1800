@@ -1,0 +1,23 @@
+# variables are defined
+def find_pairs(numbers, target):
+# creating an empty list to store all the pairs
+    pairs = []
+# using a for loop to iterate over all the numbers
+    for i in range(len(numbers)):
+        for j in range(i+1, len(numbers)):
+            if numbers[i] + numbers[j] == target:
+# is a pair of numbers is found it is added to the pairs list
+                pairs.append([numbers[i], numbers[j]])
+    return pairs
+
+# input list
+numbers = [1, 2, 3, 4, 5]
+target = 7
+pairs = find_pairs(numbers, target)
+# odd case
+if len(pairs) == 0:
+    print('No pairs found.')
+else:
+# printing output
+  for pair in pairs:
+    print(pair)
