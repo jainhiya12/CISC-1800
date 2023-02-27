@@ -1,15 +1,12 @@
-# taking input from the user
-string = input("Enter a string: ")
-# acccounting for both upper and lower case letters
-vowels = "aeiouAEIOU"
-# storing the value in a new string
-new_string = ""
+def calculate_average(numbers):
+    total = sum(numbers)
+    amount = len(numbers)
+# averaging numbers
+    average = total / amount
+    return average
 
-# replacing vowels
-for char in string:
-    if char in vowels:
-        new_string += "*"
-    else:
-        new_string += char
+# taking input here
+numbers = [1, 2, 3, 4, 5]
+average = calculate_average(numbers)
 # printing output
-print(new_string)
+print(average)
