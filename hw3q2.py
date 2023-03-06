@@ -1,6 +1,6 @@
 # taking input
 user_input = input("Enter a list of integers separated by commas: ")
-# sepearying input using split
+# seprating input using split
 num_list = user_input.split(",")
 #initialising list to 0
 total = 0
