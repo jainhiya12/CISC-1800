@@ -1,5 +1,5 @@
 # Hiya Jain
-# Lab 09: Bubble Sort
+# Lab 10: Bubble Sort
 # CISC 1800 - Introduction to Computer Programming
 
 def bubble_sort (arr):
